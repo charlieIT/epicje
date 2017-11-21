@@ -2,14 +2,24 @@
 #scrollUp {
   /*  background-image: url("../img/top.png");*/
     bottom: 30px;
-    right: 20px;
+    right: 50px;
     width: 46px;
     height: 46px;
     /*text-indent: -9999px;*/
 
 } #scrollUp::before{
-  font-family: "FontAwesome";
-    content: "\f077";
+  /*font-family: "FontAwesome";*/
+    /*content: "\f077";*/
+    content:url('../img/epic/robot_up_scroll.png');
     font-size: 24pt;
     color: #D07A48;
+    opacity: .6;
+}
+#scrollUp:hover{
+}
+
+@media screen and (max-width:890px){
+  #scrollUp{
+    display:none !important;
+  }
 }
