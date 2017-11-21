@@ -1,0 +1,15 @@
+/* Image style */
+#scrollUp {
+  /*  background-image: url("../img/top.png");*/
+    bottom: 30px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    /*text-indent: -9999px;*/
+
+} #scrollUp::before{
+  font-family: "FontAwesome";
+    content: "\f077";
+    font-size: 24pt;
+    color: #D07A48;
+}
