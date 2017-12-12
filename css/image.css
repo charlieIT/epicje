@@ -2,7 +2,10 @@
 #scrollUp {
   /*  background-image: url("../img/top.png");*/
     bottom: 30px;
-    right: 50px;
+    /**
+    remover right para ficar alinhado à esquerda da página
+    */
+    /*right: 50px;*/
     width: 46px;
     height: 46px;
     /*text-indent: -9999px;*/
@@ -15,7 +18,31 @@
     color: #D07A48;
     opacity: .6;
 }
-#scrollUp:hover{
+div.click-to-top span {display: none; position: absolute; bottom: 0; left: 0; right: 0; background: #333; color: #fff; }
+div.click-to-top:hover span {display: block; }
+
+#scrollUp:hover {
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
 }
 
 @media screen and (max-width:890px){

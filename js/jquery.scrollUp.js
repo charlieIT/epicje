@@ -23,10 +23,21 @@
         if (o.scrollTrigger) {
             $self = $(o.scrollTrigger);
         } else {
-            $self = $('<a/>', {
-                id: o.scrollName,
-                href: '#top'
+            var div =  $('<div></div>',{
+              class: 'click-to-top'
             });
+            var link = $('<a/>', {
+               id: o.scrollName,
+               href: '#top',
+               tittle: 'topo'
+           });
+            /* $self = $('<div/>', {'class': 'click-to-top'})
+             .append($('<a/>', {
+                id: o.scrollName,
+                href: '#top',
+                tittle: 'topo'
+            }));*/
+            $self = link;
         }
 
         // Set scrollTitle if there is one

@@ -61,6 +61,7 @@ ul.capitalized > li > a {
 }
 
 #hamburger.not-scrolled .hamburger {
+  /*1%*/
   margin-top:1% !important;
   -webkit-transition: all 1s ease;
    -moz-transition: all 1s ease;
@@ -156,7 +157,8 @@ img.team-img {
 #contact-form div.title h2 {
   color: white !important;
 }#contact-form a {
-  color: #d64d42 !important;
+  /*#d64d42*/
+  color: white !important;
 }#contact-form form input {
   color: black !important;
 }
@@ -318,4 +320,71 @@ sidebar @media queries
     left:0;
     top:0;
   }
+  #nav.not-scrolled img#logo {
+
+      max-width:200px!important;
+      max-height:52px !important;
+    }
+}
+
+
+#secondary-nav {
+  margin-top: 0% !important;
+
+}
+#secondary-nav li:not(.open-menu) {
+  visibility: hidden;
+}
+
+#secondary-nav li a {
+  color: white !important;
+  font-size: 13pt !important;
+}
+#secondary-nav li.active {
+  visibility: visible;;
+}
+
+nav.not-scrolled > ul.menu li:not(.open-menu) {
+  visibility: hidden;
+  display:none !important;
+  transition: all 1.5s ease;
+
+}
+
+nav.not-scrolled ul.menu li.active{
+  visibility: hidden !important;
+  display:none !important;
+  transition: all 1.5s ease;
+
+}
+
+nav.scrolled-nav ul.menu {
+  visibility: visible;
+  display: block;
+  transition: all 1.5s ease;
+}
+
+.navbar-toggle .icon-bar {
+
+}
+
+
+#placeholder {
+  background: url(../img/images/EE.jpg) 0 0 fixed;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 100px 0;
+}
+#placeholder:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 35, 34, 0.7);
+
 }
