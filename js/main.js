@@ -171,11 +171,11 @@ $(document).ready(function() {
                 var demo1 = new CountUp("projects", 0, $('#projects').attr('data-val'), 0, 3, options);
                 var demo2 = new CountUp("clients", 0, $('#clients').attr('data-val'), 0, 3, options);
                 var demo3 = new CountUp("consultions", 0, $('#consultions').attr('data-val'), 0, 3, options);
-                var demo4 = new CountUp("testimonials", 0, $('#testimonials').attr('data-val'), 0, 3, options);
+                //var demo4 = new CountUp("testimonials", 0, $('#testimonials').attr('data-val'), 0, 3, options);
                 demo1.start();
                 demo2.start();
                 demo3.start();
-                demo4.start();
+                //demo4.start();
             }
             firedz = 1;
         }
@@ -197,11 +197,11 @@ $(document).ready(function() {
                     var demo1z = new CountUp("projects", 0, $('#projects').attr('data-val'), 0, 5, options);
                     var demo2z = new CountUp("clients", 0, $('#clients').attr('data-val'), 0, 8, options);
                     var demo3z = new CountUp("consultions", 0, $('#consultions').attr('data-val'), 0, 10, options);
-                    var demo4z = new CountUp("testimonials", 0, $('#testimonials').attr('data-val'), 0, 13, options);
+                    //var demo4z = new CountUp("testimonials", 0, $('#testimonials').attr('data-val'), 0, 13, options);
                     demo1z.start();
                     demo2z.start();
                     demo3z.start();
-                    demo4z.start();
+                    //demo4z.start();
                 }
                 fired = 1;
         }

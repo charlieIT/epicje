@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/mycss.css">
 	<link rel="stylesheet" href="css/sidebar.css">
+	<!-- material cards -->
+	<link rel="stylesheet" href="css/material-cards.css">
 
 
 </head>
@@ -33,6 +35,7 @@
 		<!-- Sidebar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
 			<ul class="nav sidebar-nav">
+
 				<li class="sidebar-brand" style="padding-left:250px;">
 
 					<button type="button" class="hamburger is-closed" data-toggle="offcanvas" style="z-index:9000;">
@@ -44,16 +47,18 @@
 				</li>
 				<li><a href="#top">HOME</a></li>
 				<li><a href="#features">SERVIÇOS</a></li>
-				<li><a href="#counter">EQUIPA</a></li>
-				<li><a href="#portfolio">DEPARTAMENTOS</a></li>
+				<!--<li><a href="#counter">EQUIPA</a></li>-->
+				<li><a href="#portfolio">EQUIPA</a></li>
 				<li><a href="#partners">PARCEIROS</a></li>
 				<li><a href="#testimonial">TESTEMUNHOS</a></li>
 				<li><a href="#contact-form">CONTACTOS</a></li>
+				<!--
 				<li style="text-align:center;" class="socialMedia">
 					<span><i class="fa fa-facebook-square fa-2x"></i></span>
 					<span><i class="fa fa-linkedin-square fa-2x"></i></span>
 					<span><i class="fa fa-instagram fa-2x"></i></span>
 				</li>
+			-->
 			</ul>
 		</nav>
 		<!-- /#sidebar-wrapper -->
@@ -99,14 +104,19 @@
 						<!--
 						este home escondido é importante para não haver quebras de menu
 						--->
-							<li><a href="#top" style="display:none;">HOME</a></li>
+							<li><a href="#top" style="visibility:hidden;" class="space"></a></li>
 							<li><a href="#features">SERVIÇOS</a></li>
-							<li><a href="#counter">EQUIPA</a></li>
-							<li><a href="#portfolio">DEPARTAMENTOS</a></li>
+							<li><a href="#" style="visibility:hidden;" class="space"></a></li>
+							<!--<li><a href="#counter">EQUIPA</a></li>-->
+							<li><a href="#portfolio">EQUIPA</a></li>
+							<li><a href="#" style="visibility:hidden;" class="space"></a></li>
 							<li><a href="#partners">PARCEIROS</a></li>
-							<li><a href="#testimonial">TESTEMUNHOS</a></li>
+							<li><a href="#" style="visibility:hidden;" class="space"></a></li>
+							<!--<li><a href="#testimonial">TESTEMUNHOS</a></li>-->
 							<li><a href="#contact-form">CONTACTOS</a></li>
-							<li class="open-menu">
+							<li><a href="#" style="visibility:hidden;" class="space"></a></li>
+							<li><a href="#" style="visibility:hidden;" class="space"></a></li>
+							<li class="open-menu menu-right">
 								<button type="button" class="hamburger is-closed" data-toggle="offcanvas" style="z-index:9000;">
 													<span class="hamb-top"></span>
 													<span class="hamb-middle"></span>
@@ -133,8 +143,8 @@
 								<h1 class="epic-orange-lt">
 								<span class="icon">
 									<i class="ion-quote" style="color:#d07a48 !important;"></i></span></h1>
-								<h1 class="epic-orange-lt">
-								Because <span style="font-weight:300">EPIC</span> things happen!
+								<h1 class="epic-orange-lt" id="" style="min-height:100px;">
+								Because <span style="font-weight:300">EPIC</span> things happen
 							</h1>
 								<!--<div class="buttons">
 								<a href="#" class="btn btn-learn">Redes Sociais</a>
@@ -150,21 +160,24 @@
 									</span>
 										<!-- /.social-btn-box -->
 										<span class="social-btn-box facebook-btn-container">
-										<a href="#" class="facebook-btn">
+										<a href="https://www.facebook.com/EPICjunior.uminho" class="facebook-btn"
+										target="_blank">
 											<i class="fa fa-facebook"></i>
 										</a><!-- /.facebook-btn -->
 									</span>
 										<!-- /.social-btn-box -->
 
 										<span class="social-btn-box twitter-btn-container">
-										<a href="#" class="instagram-btn">
+										<a href="https://www.instagram.com/epic.junior.uminho/" class="instagram-btn"
+										target="_blank">
 											<i class="fa fa-instagram"></i>
 										</a><!-- /.twitter-btn -->
 									</span>
 										<!-- /.social-btn-box -->
 
 										<span class="social-btn-box linkedin-btn-container">
-										<a href="#" class="linkedin-btn">
+										<a href="https://www.linkedin.com/company/18301805/" class="linkedin-btn"
+										target="_blank">
 											<i class="fa fa-linkedin"></i>
 										</a><!-- /.linkedin-btn -->
 									</span>
@@ -197,7 +210,10 @@
 						<div class="col-md-12">
 							<div class="title">
 								<h2>Serviços</h2>
-								<p> Vivamus malesuada libero elit, vel <br> tincidunt purus maximus non. Maecenas bibendum nunc ut bibendum luctus.</p>
+								<p>
+									Prestamos serviços de consultoria e desenvolvimento do produto na área da Engenharia
+									<br>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -231,7 +247,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-4 col-xs-6 col-sm-6">
+						<div class="col-md-6 col-xs-6 col-sm-6">
 							<div class="feature-block text-center">
 								<div class="icon-box">
 									<i class="fa fa-industry fa-5x"></i>
@@ -240,7 +256,7 @@
 								<p class="wow fadeInUp" data-wow-delay="1.6s">Vivamus malesuada libero elit, vel-<br>tincidunt purus maximus non. Maecenas bibendum <br> nunc ut bibendum luctus</p>
 							</div>
 						</div>
-						<div class="col-md-4 col-xs-6 col-sm-6">
+						<div class="col-md-6 col-xs-6 col-sm-6">
 							<div class="feature-block text-center">
 								<div class="icon-box">
 									<i class="fa fa-cog fa-5x"></i>
@@ -252,14 +268,15 @@
 					</div>
 				</div>
 			</section>
-			<section id="counter">
+
+			<section id="counter" style="display:none;">
 				<div class="container">
 					<div class="row">
 						<div class="title">
 							<h2>A EPIC</h2>
 							<p>Movimento Júnior Nacional</p>
 						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="col-md-4 col-sm-6 col-xs-6">
 							<div class="block">
 								<i class="fa fa-rocket fa-4x"></i>
 								<p class="count-text">
@@ -268,7 +285,7 @@
 								<p>Projectos</p>
 							</div>
 						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="col-md-4 col-sm-6 col-xs-6">
 							<div class="block">
 								<i class="fa fa-user fa-4x"></i>
 								<p class="count-text">
@@ -277,15 +294,17 @@
 								<p>Engenheiros épicos</p>
 							</div>
 						</div>
-						<div class="col-md-3 col-sm-6 col-xs-6">
+						<div class="col-md-4 col-sm-6 col-xs-6">
 							<div class="block">
 								<i class="fa fa-list fa-4x"></i>
 								<p class="count-text">
-									<span class="counter-digit" id="consultions" data-val="12"></span>
+									<span class="counter-digit" id="consultions" data-val="15"></span>
 								</p>
 								<p>Cursos</p>
 							</div>
 						</div>
+
+
 						<div class="col-md-3 col-sm-6 col-xs-6">
 							<div class="block">
 								<i class="fa fa-thumbs-up fa-4x"></i>
@@ -295,22 +314,58 @@
 								<p>Testemunhos</p>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
+
+			<section id="subscribe">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2"></div>
+
+						<div class="col-md-8">
+							<div class="block">
+								<h2 class="wow fadeInUp" data-wow-delay=".3s">
+									A primeira Júnior Empresa da Escola de Engenharia da Universidade do Minho
+								</h2>
+								<p class="wow fadeInUp" data-wow-delay=".5s" >
+									A <span class="epic-orange-lt">EPIC</span> é uma organização sem fins lucrativos,
+									gerida exclusivamente por estudantes empreendedores, dinâmicos e
+									inovadores, focada na prestação de serviços
+									a pequenas e médias empresas.
+							</p>
+								<div class="text-center">
+										<a href="#contact-form">
+										<button class="btn btn-learn" type="submit" style="margin-top:15px;">
+										Contacte-nos
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</section>
+
 			<section id="portfolio">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<div class="title">
-								<h2>DEPARTAMENTOS</h2>
-								<p>Tincidunt purus maximus non maecenas bibendum nunc ut<br> bibendum luctus libero elit.</p>
+								<h2>EQUIPA</h2>
+								<p>
+						A nossa equipa é constituída por 21 empreendedores <br>do 2º ao 5º ano
+						dos vários cursos da Escola de Engenharia da Universidade do Minho.
+								</p>
 							</div>
 							<div class="block">
 								<div class="recent-work-mixMenu">
 									<ul>
-										<li><button class="filter" data-filter="all">All</button></li>
-										<li><button class="filter" data-filter=".com">Comercial</button></li>
+										<li><button style=""
+											class="filter" data-filter=".default">Direção</button></li>
+										<!--<li><button class="filter" data-filter=".com">Comercial</button></li>-->
 										<li><button class="filter" data-filter=".web">Design & Marketing</button></li>
 										<li><button class="filter" data-filter=".tec">Técnico</button></li>
 										<li><button class="filter" data-filter=".rh">Recursos Humanos</button></li>
@@ -319,59 +374,353 @@
 								</div>
 								<div class="recent-work-pic">
 									<ul id="mixed-items">
-										<li class="mix com web col-md-4 col-xs-6" data-my-order="1">
-											<a class="example-image-link" href="img/work1.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work1.jpg" alt="">
-												<div class="overlay">
-													<h3>Lorem dolor</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix default col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Ana Afonso</span>
+																	<strong>
+																			<!--<i class="fa fa-fw fa-star"></i>-->
+																			Presidente
+																	</strong>
+
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/Presidente/ana.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão Industrial
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
-										<li class="mix web fin col-md-4 col-xs-6" data-my-order="2">
-											<a class="example-image-link" href="img/work2.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work2.jpg" alt="">
-												<div class="overlay">
-													<h3>Web amet</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix default tec col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>João Moniz</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/tecnico/moniz.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão de Sistemas de Informação
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
-										<li class="mix web tech col-md-4 col-xs-6" data-my-order="3">
-											<a class="example-image-link" href="img/work3.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work3.jpg" alt="">
-												<div class="overlay">
-													<h3>Web dolor</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix default fin col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Margarida Maçães</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/Financeiro/margarida.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia Mecânica
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
-										<li class="mix com rh col-md-4 col-xs-6" data-my-order="4">
-											<a class="example-image-link" href="img/work4.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work4.jpg" alt="">
-												<div class="overlay">
-													<h3>Lorem web</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix  default web col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Francisca Calçada</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/DM/francisca.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão Industrial
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
-										<li class="mix tec rh fin col-md-4 col-xs-6" data-my-order="5">
-											<a class="example-image-link" href="img/work5.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work5.jpg" alt="">
-												<div class="overlay">
-													<h3>Dolor amet</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix default  rh col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Beatriz Nunes</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/rh/beatriz.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia Civil
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
-										<li class="mix fi com col-md-4 col-xs-6" data-my-order="6">
-											<a class="example-image-link" href="img/work6.jpg" data-lightbox="example-set">
-												<img class="img-responsive" src="img/work6.jpg" alt="">
-												<div class="overlay">
-													<h3>Lorem amet</h3>
-													<i class="ion-ios-plus-empty"></i>
-												</div>
-											</a>
+										<li class="mix default  com col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Bruno Lopes</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/Comercial/bruno.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão Industrial
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix default  com col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Guilherme Fernandes</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/tecnico/guilherme.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão de Sistemas de Informação
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix tec col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Diogo Silva</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/tecnico/dsilva.JPG">
+																	</div>
+																	<div class="mc-description">
+																			Engenharia Mecânica
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix tec col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Luís Oliveira</span>
+																	<!--<strong>
+																			<i class="fa fa-fw fa-star"></i>
+																			The Deer Hunter
+																	</strong>
+																-->
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/tecnico/luis.jpg">
+																	</div>
+																	<div class="mc-description">
+																			Engenharia e Gestão de Sistemas de Informação
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix fin col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Daniel Rodrigues</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/Financeiro/daniel.jpg">
+																	</div>
+																	<div class="mc-description">
+																			Engenharia Mecânica
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix rh com col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>David Ferreira</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/rh/david.JPG">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão de Sistemas de Informação
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix tec col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Inês Quelhas</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/tecnico/ines.JPG">
+																	</div>
+																	<div class="mc-description">
+																		 Engenharia e Gestão Industrial
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
+										</li>
+										<li class="mix web  com col-md-3 col-sm-3 col-xs-6">
+											<div class="">
+													<article class="material-card Red">
+															<h2>
+																	<span>Patrícia Marinho</span>
+															</h2>
+															<div class="mc-content">
+																	<div class="img-container">
+																			<img class="img-responsive"
+																			src="img/epic/equipa/EPIC/Fotos/DM/patricia.jpg">
+																	</div>
+																	<div class="mc-description">
+																		 Design Marketing & Moda
+																	</div>
+															</div>
+															<a class="mc-btn-action">
+																	<i class="fa fa-bars"></i>
+															</a>
+															<div class="mc-footer">
+																	<a class="fa fa-fw fa-facebook"></a>
+																	<a class="fa fa-fw fa-twitter"></a>
+																	<a class="fa fa-fw fa-linkedin"></a>
+															</div>
+													</article>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -393,6 +742,7 @@
 			</section>
 -->
 <section id="placeholder">
+
 </section>
 
 			<section id="partners">
@@ -400,7 +750,6 @@
 					<div class="row">
 						<div class="title">
 							<h2 id="partner-title">Parceiros</h2>
-							<p>Tincidunt purus maximus non maecenas bibendum nunc ut<br> bibendum luctus libero elit.</p>
 						</div>
 						<div class="col col-md-3 wow fadeInLeft" style="text-align:center;" data-wow-delay=".3s">
 							<img src="img/images/aaum.jpg" alt="AAUM" width="178" height="140" />
@@ -413,9 +762,15 @@
 								<img src="img/images/acig.png" alt="ACIG" width="150" height="150" />
 							</a>
 						</div>
+						<div class="col col-md-3 wow fadeInLeft" style="text-align:center;" data-wow-delay=".3s">
+							<a href="#" alt="_blank">
+								<img src="img/epic/sharks.png" alt="sharks" height="150" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
+			<!--
 			<section id="subscribe">
 				<div class="container">
 					<div class="row">
@@ -432,11 +787,12 @@
 					</div>
 				</div>
 			</section>
+		-->
 			<section id="testimonial"><br>
 				<div class="container">
 					<div class="row">
 						<div class="title">
-							<h2>Testemunhos</h2>
+							<h2>Júnior Empreendedorismo</h2>
 							<p>Tincidunt purus maximus non maecenas bibendum nunc ut<br> bibendum luctus libero elit.</p>
 						</div>
 						<div class="col col-md-6">
@@ -447,8 +803,12 @@
 									</a>
 								</div>
 								<div class="media-body">
-									<a href="#"><h4 class="media-heading">John Doe</h4></a>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo</p>
+									<a href="#"><h4 class="media-heading">Júnior Empresa</h4></a>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+											ut labore et dolore
+											magna aliqua.
+											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo</p>
 								</div>
 							</div>
 						</div>
@@ -460,7 +820,7 @@
 									</a>
 								</div>
 								<div class="media-body">
-									<a href="#"><h4 class="media-heading">Jesica Maldini</h4></a>
+									<a href="#"><h4 class="media-heading">Jade</h4></a>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo</p>
 								</div>
 							</div>
@@ -473,7 +833,7 @@
 									</a>
 								</div>
 								<div class="media-body">
-									<a href="#"><h4 class="media-heading">Amanda Benson</h4></a>
+									<a href="#"><h4 class="media-heading">Internacional</h4></a>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo</p>
 								</div>
 							</div>
@@ -486,7 +846,7 @@
 									</a>
 								</div>
 								<div class="media-body">
-									<a href="#"><h4 class="media-heading">George Smith</h4></a>
+									<a href="#"><h4 class="media-heading">Objectivos</h4></a>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo</p>
 								</div>
 							</div>
@@ -500,15 +860,8 @@
 						<div class="title">
 							<h2>Contactos</h2>
 						</div>
-						<div class="col-md-6" style="min-height:250px;">
-							<!--
-						<form>
-							<input type="text" class="form-control" placeholder="Nome">
-							<input type="text" class="form-control" placeholder="Endereço e-mail">
-							<textarea class="form-control" rows="3" placeholder="Mensagem"></textarea>
-							<button class="btn btn-default" type="submit">Enviar</button>
-						</form>
-					-->
+						<div class="col-md-6 col-sm-3" style="min-height:250px;">
+
 					<img src="img/epic/LogoPenta.png" width="220" height="210"/>
 						</div>
 
@@ -519,8 +872,8 @@
 									<i class="fa fa-envelope fa-3x"></i>
 
 								</div>
-								<div class="col col-md-6" style="margin:10px;">
-									<h4 style="vertical-align:middle;text-align:left;">
+								<div class="col col-md-6" style="margin:10px;text-align:center;">
+									<h4 style="vertical-align:middle;text-align:center;">
 									<a href="mailto:epic.junior.uminho@gmail.com" target="_top">
 										epic.junior.uminho@gmail.com
 									</a>
@@ -533,8 +886,8 @@
 									<i class="fa fa-map-marker fa-3x"></i>
 
 								</div>
-								<div class="col col-md-6" style="margin:10px;">
-									<h4 style="vertical-align:middle;text-align:left;">
+								<div class="col col-md-6" style="margin:10px;text-align:center;">
+									<h4 style="vertical-align:middle;text-align:center;">
 								Escola de Engenharia, {rua}, {local}, {Departamento}, {Sala}
 									</h4>
 								</div>
@@ -545,8 +898,8 @@
 									<i class="fa fa-phone fa-3x"></i>
 
 								</div>
-								<div class="col col-md-6" style="margin:10px;">
-									<h4 style="vertical-align:middle;text-align:left;">
+								<div class="col col-md-6" style="margin:10px;text-align:center;">
+									<h4 style="vertical-align:middle;text-align:center;">
 								(+351) 222 222 222
 			</h4>
 								</div>
@@ -640,25 +993,24 @@
 </h4>
 									</div>
 								</div>
---><div class="row">
+--><div class="row" id="social-links">
 
-		<i class="fa fa-linkedin-square fa-2x"></i>
-		<i class="fa fa-github-square fa-2x"></i>
-		<i class="fa fa-instagram fa-2x"></i>
-		<i class="fa fa-facebook-square fa-2x"></i>
+		<a href="https://www.linkedin.com/company/18301805/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+		<!--<i class="fa fa-github-square fa-2x"></i>-->
+		<a href="https://www.instagram.com/epic.junior.uminho/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+		<a href="https://www.facebook.com/EPICjunior.uminho/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
 
 </div>
 
 							</div>
 						</div>
 						<div class="col-md-4">
-							<h3 class="original-red-lt">Links/Sobre/Docs</h3>
+							<h3 class="original-red-lt">Recursos</h3>
 							<br>
 							<div class="block">
 								<div class="row" style="font-color:#87CEEB !important;">
-
 											<i class="fa fa-file-pdf-o fa-2x" style="color:#d64d42 !important;"></i>
-												<i class="fa fa-envelope fa-2x" ></i>
+
 <i class="fa fa-spinner fa-2x" ></i>
 <i class="fa fa-users fa-2x" ></i>
 								</div>

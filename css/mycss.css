@@ -53,7 +53,7 @@ ul.capitalized > li > a {
     transition: all 1s ease;
 }
 #navigation.scrolled-nav{
-  background-color: hsla(0,0%, 35%, 0.5);
+  background-color: hsla(0,0%, 35%, 0.85);
   -webkit-transition: all 1s ease-in;
    -moz-transition: all 1s ease-in;
    -o-transition: all 1s ease-in;
@@ -162,6 +162,14 @@ img.team-img {
 }#contact-form form input {
   color: black !important;
 }
+
+#contact-form div.col div.row {
+  /*margin: 20px 0px !important;*/
+}
+#contact-form div.col div.row div.col {
+  min-height: 60px;
+}
+
 
 #contact-short div.row {
   margin:12px 0px !important;
@@ -312,6 +320,16 @@ Social
 sidebar @media queries
 **/
 
+@media screen and (max-width:1200px){
+  #secondary-nav li a {
+    font-size: 10pt !important;
+  }
+  #nav.scrolled-nav img#logo {
+      max-width:200px!important;
+      max-height:52px !important;
+    }
+}
+
 @media screen and (max-width:400px){
   #sidebar-wrapper {
     position: fixed;
@@ -321,7 +339,6 @@ sidebar @media queries
     top:0;
   }
   #nav.not-scrolled img#logo {
-
       max-width:200px!important;
       max-height:52px !important;
     }
@@ -338,7 +355,7 @@ sidebar @media queries
 
 #secondary-nav li a {
   color: white !important;
-  font-size: 13pt !important;
+  font-size: 11pt !important;
 }
 #secondary-nav li.active {
   visibility: visible;;
@@ -387,4 +404,49 @@ nav.scrolled-nav ul.menu {
     height: 100%;
     background: rgba(32, 35, 34, 0.7);
 
+}
+
+.space {
+  width:50px;
+}
+
+/**
+overwrite departamentos & equipa
+*/
+
+/*
+overwrite parceiros
+*/
+#partners {
+  background-color: white;
+}
+/**
+overwrite for icons
+*/
+#features .feature-block .icon-box i {
+  /*color: #d07a48 !important;*/
+}
+
+#social-links a {
+  color: #444444 !important;
+}
+
+div.mc-footer a.fa-facebook:hover {
+  background-color: #3B5998 !important;
+}
+div.mc-footer a.fa-facebook{
+  background-color: rgb(37, 54, 76) !important;
+}
+
+div.mc-footer a.fa-twitter{
+  background-color: rgb(37, 54, 76) !important;
+}
+div.mc-footer a.fa-twitter:hover  {
+  background-color: #1dcaff !important;
+}
+div.mc-footer a.fa-linkedin{
+  background-color: rgb(37, 54, 76) !important;
+}
+div.mc-footer a.fa-linkedin:hover  {
+  background-color: #0077B5 !important;
 }

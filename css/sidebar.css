@@ -122,6 +122,7 @@ html { height: 100%;}
 li.sidebar-brand{
   background-color:transparent;
   opacity: 0.5;
+  max-height:52px;
 }
 .sidebar-nav li.sidebar-brand:before{
 
@@ -129,7 +130,9 @@ li.sidebar-brand{
 
 }
 /*#1a1a1a*/
-
+.sidebar-nav li.sidebar-brand button.hamburger{
+  top: 20px;
+}
 /*
 .sidebar-nav li:first-child a {
     color: #fff;
@@ -216,7 +219,7 @@ li.sidebar-brand{
 
 .hamburger {
   position: fixed;
-  top: 20px;
+  /*top: 20px;*/
   z-index: 999;
   display: block;
   width: 32px;
