@@ -58,6 +58,7 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 
 $(document).ready(function() {
     var trigger = $('.hamburger'),
+        updatable = $('.myhamb'),
         overlay = $('.overlay'),
         triggerMobile = $('.navbar-toggle'),
         isClosed = false;

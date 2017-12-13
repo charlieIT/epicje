@@ -137,7 +137,7 @@ img.team-img {
   height: 314px !important;
 }
 
-.epic-orange-lt {
+.epic-orange-lt{
   color: #d07a48 !important;
 }
 
@@ -328,6 +328,11 @@ sidebar @media queries
       max-width:200px!important;
       max-height:52px !important;
     }
+
+    .space {
+      max-width: 0 !important;
+      display:none !important;
+    }
 }
 
 @media screen and (max-width:400px){
@@ -343,7 +348,6 @@ sidebar @media queries
       max-height:52px !important;
     }
 }
-
 
 #secondary-nav {
   margin-top: 0% !important;
@@ -449,4 +453,64 @@ div.mc-footer a.fa-linkedin{
 }
 div.mc-footer a.fa-linkedin:hover  {
   background-color: #0077B5 !important;
+}
+
+/** material cards */
+.material-card.Comp h2 {
+    background-color: #489ed0;
+}
+.material-card.Comp h2:after {
+    border-right-color: #489ed0;
+    border-top-color: #489ed0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.material-card.Comp h2:before {
+    border-top-color: transparent;
+
+    border-right-color: #2f84b6;
+    border-bottom-color:#2f84b6;
+    border-left-color: transparent;
+}
+.material-card.Comp.mc-active h2:before {
+    border-top-color: transparent;
+    /*border-right-color: #b71c1c;
+    border-bottom-color: #b71c1c;*/
+    border-right-color: #489ed0;
+    border-bottom-color: #489ed0;
+    border-left-color: transparent;
+}
+.material-card.Comp.mc-active h2:after {
+    /*border-top-color: #b71c1c;
+    border-right-color: #b71c1c;*/
+    /*border-top-color:#d07a48;
+    border-right-color:#d07a48;*/
+    border-right-color: #2f84b6;
+    border-top-color: #2f84b6;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+.material-card.Comp .mc-btn-action {
+    /*background-color: #b71c1c;*/
+    background-color: #489ed0;
+}
+.material-card.Comp .mc-btn-action:hover {
+    /*background-color: #b71c1c;*/
+    background-color: #489ed0;
+}
+.material-card.Comp .mc-footer h4 {
+    color: #b71c1c;
+}
+.material-card.Comp .mc-footer a {
+    background-color: #b71c1c;
+}
+.material-card.Comp.mc-active .mc-content {
+    background-color: #e4f1f8;
+}
+.material-card.Comp.mc-active .mc-footer {
+    /*background-color: #ffcdd2;*/
+    background-color: #ffc7a6;
+}
+.material-card.Comp.mc-active .mc-btn-action {
+    border-color: white;
 }

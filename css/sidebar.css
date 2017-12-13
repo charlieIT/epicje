@@ -49,8 +49,8 @@ html { height: 100%;}
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 350px;
-    margin-left: -350px;
+    width: 230px;
+    margin-left: -230px;
     margin-top: 0px;
     transform: scale(1)
 }
@@ -73,7 +73,7 @@ html { height: 100%;}
     position: absolute;
     top: 0;
     margin-top:60px;
-    width: 350px;
+    width: 230px;
     margin: 0;
     padding: 0;
     list-style: none;

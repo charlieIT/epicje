@@ -111,7 +111,8 @@ a:active {
     content: '';
     width: 40px;
     height: 2px;
-    background: #d64d42;
+    /*background: #d64d42;*/
+    background: #d07a48;
     position: absolute;
     top: 12px;
     left: -60px;
@@ -120,7 +121,8 @@ a:active {
     content: '';
     width: 40px;
     height: 2px;
-    background: #d64d42;
+    /*background: #d64d42;*/
+    background: #d07a48;
     position: absolute;
     top: 12px;
     right: -60px;
@@ -454,13 +456,15 @@ padding:200px 0 200px 0px;
   text-transform: uppercase;
 }
 #portfolio .block .recent-work-mixMenu ul li button:hover {
-  color: #d64d42;
+  /*color: #d64d42;*/
+  color: #d07a48;
 }
 #portfolio .block .recent-work-mixMenu ul li button:focus {
   outline: 0;
 }
 #portfolio .block .recent-work-mixMenu ul li .active {
-  color: #d64d42;
+  /*color: #d64d42;*/
+  color: #d07a48;
 }
 #portfolio .block .recent-work-pic ul li {
   margin-bottom: 30px;
@@ -542,10 +546,13 @@ padding:200px 0 200px 0px;
 }
 
 #subscribe .block .btn-learn {
-  border: 1px solid #d64d42;
-  color: #d64d42;
+  /*border: 1px solid #d64d42;*/
+  /*border: 1px solid white;*/
+  /*color: #d64d42;*/
+  color: white;
   border-radius: 5px;
-  background: rgba(255,255,255,.7);
+  /*background: rgba(255,255,255,.7);*/
+  background: #d07a48;
   margin: 0 7px;
   padding: 10px 22px;
   font-size: 14px;
