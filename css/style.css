@@ -62,7 +62,7 @@ p {
   margin: 0px;
 }
 h1,h2,h3,h4,h5,h6,p {
-  font-family: 'Open-Sans','Roboto', sans-serif;
+  font-family: 'PT Sans','Open-Sans','Roboto', sans-serif;
   /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
   /*text-transform: capitalize;*/
   margin: 0px;
@@ -379,7 +379,11 @@ padding:200px 0 200px 0px;
   margin-top: 40px;
 }
 #counter {
-  /*background: url(../img/images/EE.jpg) 0 0 fixed;*/
+/*
+edit luis
+*/
+  /*
+  background: url(../img/images/EE.jpg) 0 0 fixed;*/
   background: url("../img/epic/membros_1300_spaced.jpg") 0 0 fixed;
   background-size: cover;
   background-position: center;

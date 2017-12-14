@@ -35,10 +35,10 @@ $(document).ready(function() {
 
             }, interval);
         }
-        };
-        $(function() {
-            showText("#letras", "Because EPIC things happen", 0, 100);
-        });
+    };
+    $(function() {
+        showText("#letras", "Because EPIC things happen", 0, 100);
+    });
 
 });
 
@@ -106,32 +106,46 @@ $(document).ready(function() {
     });
 });
 
-    $(function() {
-        $('.material-card > .mc-btn-action').click(function () {
-            var card = $(this).parent('.material-card');
-            var icon = $(this).children('i');
-            icon.addClass('fa-spin-fast');
+$(function() {
+    $('.material-card > .mc-btn-action').click(function() {
+        var card = $(this).parent('.material-card');
+        var icon = $(this).children('i');
+        icon.addClass('fa-spin-fast');
 
-            if (card.hasClass('mc-active')) {
-                card.removeClass('mc-active');
+        if (card.hasClass('mc-active')) {
+            card.removeClass('mc-active');
 
-                window.setTimeout(function() {
-                    icon
-                        .removeClass('fa-arrow-left')
-                        .removeClass('fa-spin-fast')
-                        .addClass('fa-bars');
+            window.setTimeout(function() {
+                icon
+                    .removeClass('fa-arrow-left')
+                    .removeClass('fa-spin-fast')
+                    .addClass('fa-bars');
 
-                }, 800);
-            } else {
-                card.addClass('mc-active');
+            }, 800);
+        } else {
+            card.addClass('mc-active');
 
-                window.setTimeout(function() {
-                    icon
-                        .removeClass('fa-bars')
-                        .removeClass('fa-spin-fast')
-                        .addClass('fa-arrow-left');
+            window.setTimeout(function() {
+                icon
+                    .removeClass('fa-bars')
+                    .removeClass('fa-spin-fast')
+                    .addClass('fa-arrow-left');
 
-                }, 800);
-            }
-        });
+            }, 800);
+        }
     });
+});
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+    var os = $('#contact-form').offset().top; // pixels to the top of div1
+    var ht = $('#contact-form').height(); // height of div1 in pixels
+    // if you've scrolled further than the top of div1 plus it's height
+    // change the color. either by adding a class or setting a css property
+    console.log(os);
+    if (scroll >= os - 300) {
+        /*$('#contact-form').addClass('inside');*/
+    } else {
+      /*$('#contact-form').removeClass('inside');*/
+    }
+});

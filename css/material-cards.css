@@ -104,6 +104,7 @@ edit luís - min height
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .material-card .mc-btn-action {
     position: absolute;
     right: 16px;
