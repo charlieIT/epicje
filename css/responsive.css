@@ -80,20 +80,20 @@
     top: 34%;
     font-size: 23px;
   }
-  #testimonial .col {
+  #entrepreneurship .col {
     padding: 20px;
     text-align: center;
   }
-  #testimonial .media .media-left {
+  #entrepreneurship .media .media-left {
     display: block;
     padding-right: 0;
   }
-  #testimonial .media .media-left a {
+  #entrepreneurship .media .media-left a {
     height: 78px;
     width: 78px;
     margin: 0 auto;
   }
-  #testimonial .media .media-body {
+  #entrepreneurship .media .media-body {
     padding-right: 0;
   }
   #team .col {

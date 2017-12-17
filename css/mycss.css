@@ -384,6 +384,17 @@ sidebar @media queries
     }
 }
 
+@media screen and (max-width: 990px) {
+  #partners img {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+#secondary-nav li:not(.open-menu) {
+  display:none;
+}
+
+}
+
 #secondary-nav {
     margin-top: 0% !important;
 }
@@ -485,6 +496,7 @@ overwrite for icons
 
 #features .feature-block .icon-box i {
     /*color: #d07a48 !important;*/
+    /*color: #AA5A56 !important;*/
 }
 
 #social-links a {
