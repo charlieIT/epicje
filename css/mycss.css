@@ -377,7 +377,7 @@ sidebar @media queries
 }
 
 @media screen and (max-width:400px) {
-    
+
     #nav.not-scrolled img#logo {
         max-width: 200px!important;
         max-height: 52px !important;
@@ -518,6 +518,7 @@ div.mc-footer a.fa-linkedin:hover {
 
 /** material cards */
 
+
 .material-card.Comp h2 {
     background-color: #489ed0;
 }
@@ -591,6 +592,28 @@ div.mc-footer a.fa-linkedin:hover {
 /**
 edit luis
 */
+.material-card.mc-active .mc-footer{
+  padding-left: 25%;
+}
+
+.material-card h2 {
+  /*min-height:83px;*/
+  min-height: 0px;
+  padding: 10px 10px;
+}
+
+.mc-active h2 {
+  min-height:82px !important;
+}
+
+.material-card.mc-active .mc-description {
+    padding-top: 4.8em;
+}
+
+.material-card.Red .mc-btn-action{
+  background-color: #050505 !important;
+}
+
 
 .material-card .mc-btn-action {
     position: absolute;
@@ -599,10 +622,10 @@ edit luis
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 5px solid;
+    border: 3px solid;
     width: 36px;
     height: 36px;
-    line-height: 26px;
+    line-height: 30px;
     text-align: center;
     color: #fff;
     cursor: pointer;
@@ -693,7 +716,7 @@ serviços
     width: 100px;
     margin: 20px auto;
     position: relative;
-    animation: op 3s ease infinite;
+    /*animation: op 3s ease infinite;*/
 }
 
 .feature-block i.fa-circle-o-notch {
@@ -701,16 +724,24 @@ serviços
     animation: op 3s ease infinite;
 }
 
+#features .col-md-6{
+
+}
+
 #features .feature-block .service-box {
     min-height: 200px;
     max-width: 100%;
     /*background-color: #f1f1f1;*/
-    border-radius: 5px;
+    border-radius: 0px;
     perspective: 1000px;
+    /*
+    este cinza fica bem */
+    border: 1px solid rgb(191, 191, 191);
+
 }
 
 .service-box:hover .flipper, .service-box.hover .flipper {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 
 .flipper {
@@ -730,7 +761,8 @@ serviços
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
+  /*  padding: 20px;*/
+    padding: 10% 20px;
 }
 
 
@@ -739,14 +771,14 @@ serviços
 .front {
     z-index: 2;
     /* for firefox 31 */
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
 }
 
 
 /* back, initially hidden pane */
 
 .back {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 
 .service-box h4 {
@@ -787,6 +819,103 @@ serviços
 empreendedorismo / testemunhos
 */
 
-#testimonial .media .media-left a::before {
+#entrepreneurship .media .media-left a::before {
     display: none;
+}
+#entrepreneurship .col-md-6 {
+  min-height:290px;
+}
+
+/**
+equipa
+*/
+#members {
+  padding: 100px 0;
+}
+#members .block .recent-work-mixMenu {
+  padding-bottom: 40px;
+  text-align: center;
+}
+#members .block .recent-work-mixMenu ul li {
+  display: inline-block;
+  padding: 0;
+}
+#members .block .recent-work-mixMenu ul li button {
+  background: none;
+  border: 0;
+  font-size: 15px;
+  color: #474747;
+  margin: 0 20px;
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+#members .block .recent-work-mixMenu ul li button:hover {
+  /*color: #d64d42;*/
+  color: #d07a48;
+}
+#members .block .recent-work-mixMenu ul li button:focus {
+  outline: 0;
+}
+#members .block .recent-work-mixMenu ul li .active {
+  /*color: #d64d42;*/
+  color: #d07a48;
+}
+#members .block .recent-work-pic ul li {
+  margin-bottom: 30px;
+  position: relative;
+}
+#members .block .recent-work-pic ul li:hover .overlay {
+  opacity: 1;
+}
+#members .block .recent-work-pic ul li:hover .overlay i {
+  top: 40%;
+  opacity: 1;
+}
+#members .block .recent-work-pic ul li:hover .overlay h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+#members .block .recent-work-pic ul li .overlay {
+  position: absolute;
+  top: 23px;
+  left: 38px;
+  bottom: 23px;
+  right: 38px;
+  background: rgba(214, 77, 66, 0.85);
+  transition: 0.3s;
+  text-align: center;
+  opacity: 0;
+}
+#members .block .recent-work-pic ul li .overlay h3,
+#members .block .recent-work-pic ul li .overlay i {
+  color: #fff;
+
+}
+#members .block .recent-work-pic ul li .overlay h3 {
+  bottom: 30%;
+  left: 50%;
+  opacity: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  transition: 0.3s;
+  position: absolute;
+  transition-delay: 0.1s;
+  transform: translateX(-50%);
+}
+#members .block .recent-work-pic ul li .overlay i {
+  top: 30%;
+  opacity: 0;
+  left: 50%;
+  font-size: 50px;
+  transition: 0.3s;
+  transition-delay: 0s;
+  position: absolute;
+  transform: translate(-50%, 50%);
+}
+#members .block .recent-work-pic ul li .overlay .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

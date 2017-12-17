@@ -611,37 +611,37 @@ edit luis
 #html5-watermark {
   display: none !important;
 }
-#testimonial {
+#entrepreneurship {
   padding: 77px 0;
 }
-#testimonial .col {
+#entrepreneurship .col {
   position: relative;
   padding: 47px 60px;
   overflow: hidden;
 }
-#testimonial .col-md-6 {
+#entrepreneurship .col-md-6 {
     border: solid #dedede;
     border-width: 0 1px 1px 0;
     padding-bottom: 42px;
 }
-#testimonial .col-md-6:nth-child(3n) {
+#entrepreneurship .col-md-6:nth-child(3n) {
       border-right: 0;
 }
-#testimonial .col-md-6:nth-child(5n) {
+#entrepreneurship .col-md-6:nth-child(5n) {
       border-right: 0;
       border-bottom: 0;
 }
-#testimonial .col-md-6:nth-child(4n) {
+#entrepreneurship .col-md-6:nth-child(4n) {
   border-bottom: 0;
 }
-#testimonial .media .media-left {
+#entrepreneurship .media .media-left {
   padding-right: 20px;
 }
-#testimonial .media .media-left a {
+#entrepreneurship .media .media-left a {
   position: relative;
   display: block;
 }
-#testimonial .media .media-left a:before {
+#entrepreneurship .media .media-left a:before {
   content: "\f347";
   position: absolute;
   left: 0;
@@ -656,15 +656,15 @@ edit luis
   font-size: 13px;
   padding-top: 2px;
 }
-#testimonial .media .media-body {
+#entrepreneurship .media .media-body {
   padding-top: 5px;
 }
-#testimonial .media .media-body h4 {
+#entrepreneurship .media .media-body h4 {
   color: #444;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-#testimonial .media .media-body p {
+#entrepreneurship .media .media-body p {
   font-size: 14px;
   font-family: 'Lora', serif;
   font-style: italic;
