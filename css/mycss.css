@@ -457,7 +457,7 @@ nav.scrolled-nav ul.menu {
     -moz-background-size: 100% 100%;
     background-position: 50% 100px;
     position: relative;
-    padding: 35px 0;
+    padding: 0px 0;
     max-width: 100%;
     /*min-height: 100%;*/
     width: 100%;
