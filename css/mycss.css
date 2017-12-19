@@ -451,13 +451,13 @@ nav.scrolled-nav ul.menu {
 
 #teamPlaceholder {
     /*background: url(../img/epic/FotoMembros_2_1300.jpg) 0 0 fixed;*/
-    background: url("../img/epic/foto_equipa.png") no-repeat fixed;
+    /*background: url("../img/epic/foto_equipa.png") no-repeat fixed;*/
     background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-position: 50% 100px;
     position: relative;
-    padding: 100px 0;
+    padding: 35px 0;
     max-width: 100%;
     /*min-height: 100%;*/
     width: 100%;
