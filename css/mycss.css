@@ -133,7 +133,6 @@ ul.capitalized>li>a {
 }
 
 #partners {
-    /*background-color:#d5d5d5 !important;*/
 }
 
 .counter {
@@ -155,7 +154,7 @@ img.team-img {
     color: #d07a48 !important;
 }
 
-#partners {
+#partners, #partners_ {
     padding: 77px 0 !important;
 }
 
@@ -170,7 +169,7 @@ img.team-img {
 #contact-form {
     /*background-color: #333 !important;*/
     background-color: hsla(0, 0%, 35%, 0.85) !important;
-    padding: 0px 100px;
+    padding: 30px 100px;
     transition: 0.75s ease-out;
 }
 
@@ -383,16 +382,32 @@ sidebar @media queries
         max-height: 52px !important;
     }
 }
+@media screen and (max-width:768px) {
+  #contact-form .description {
+    text-align: center !important;
+  }
+  footer .copyright-area {
+    text-align:center !important;
+  }
+}
 
 @media screen and (max-width: 990px) {
-  #partners img {
-    margin-top: 20px;
-    margin-bottom: 40px;
+  #partners img, #partners_ img {
+    margin: 24px 0px 24px 0px;
   }
 #secondary-nav li:not(.open-menu) {
   display:none;
 }
+#partners_ div.col.col-md-2{
+  text-align:center!important;
+}
 
+}
+
+@media screen and (max-width: 550px) {
+  #teamPlaceholder {
+    background: rgba(32, 35, 34, 0.7) !important;
+  }
 }
 
 #secondary-nav {
@@ -434,12 +449,20 @@ nav.scrolled-nav ul.menu {
 .navbar-toggle .icon-bar {}
 
 #teamPlaceholder {
-    background: url(../img/epic/membros_1300_spaced.jpg) 0 0 fixed;
-    background-size: cover;
-    background-position: center;
+    /*background: url(../img/epic/FotoMembros_2_1300.jpg) 0 0 fixed;*/
+    background: url("../img/epic/Membros_1300.png") no-repeat fixed;
+    background-size: 100% 100%;
+  /*  -webkit-background-size: 100% 50%;
+    -moz-background-size: 100% 50%;*/
+    background-position: 0 100px;
     position: relative;
-    text-align: center;
     padding: 100px 0;
+    max-width: 100%;
+    /*min-height: 100%;*/
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+
 }
 
 #teamPlaceholder:before {
@@ -449,7 +472,17 @@ nav.scrolled-nav ul.menu {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(32, 35, 34, 0.7);
+    background: rgba(32, 35, 34, 0.8);
+}
+#teamPlaceholder .testemunho:after {
+  opacity: 1;
+  background-color: #d1d1d1;
+}
+#teamPlaceholder .testemunho {
+  font-size: 10pt;
+  color: white;
+
+
 }
 
 #placeholder {
@@ -485,7 +518,7 @@ overwrite departamentos & equipa
 overwrite parceiros
 */
 
-#partners {
+#partners, #partners_ {
     background-color: white;
 }
 
@@ -605,17 +638,19 @@ div.mc-footer a.fa-linkedin:hover {
 edit luis
 */
 .material-card.mc-active .mc-footer{
-  padding-left: 25%;
+  padding-left: 10%;
 }
 
 .material-card h2 {
   /*min-height:83px;*/
   min-height: 0px;
   padding: 10px 10px;
+  text-align: center;
 }
 
 .mc-active h2 {
   min-height:82px !important;
+  text-align:left;
 }
 
 .material-card.mc-active .mc-description {
@@ -673,7 +708,7 @@ contactos
 
 .description .big-box {
   text-transform: uppercase;
-    min-height: 115px;
+  min-height: 115px;
 }
 
 .description h3 {
@@ -748,7 +783,8 @@ serviços
     perspective: 1000px;
     /*
     este cinza fica bem */
-    border: 1px solid rgb(191, 191, 191);
+    /*border: 1px solid rgb(191, 191, 191);*/
+    background-color:#F4F4F4;
 
 }
 
@@ -835,7 +871,7 @@ empreendedorismo / testemunhos
     display: none;
 }
 #entrepreneurship .col-md-6 {
-  min-height:290px;
+  min-height:300px;
 }
 
 /**

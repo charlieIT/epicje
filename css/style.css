@@ -35,6 +35,9 @@
    src: url("../fonts/ONEDAY/ONEDAY.ttf") format("truetype");
 }
 
+html, body {
+  height:100%;
+}
 
 body {
   line-height: 24px;
@@ -43,7 +46,7 @@ body {
   color: #d64d42;
   font-weight: 400;
   color: #444;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Antic Slab','PT Sans','Roboto', sans-serif;
 }
 
 h1 {
@@ -62,7 +65,7 @@ p {
   margin: 0px;
 }
 h1,h2,h3,h4,h5,h6,p {
-  font-family: 'PT Sans','Open-Sans','Roboto', sans-serif;
+  font-family: 'Antic Slab','PT Sans','Open-Sans','Roboto', sans-serif;
   /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
   /*text-transform: capitalize;*/
   margin: 0px;
@@ -575,7 +578,7 @@ edit luis
   font-size: 24px;
   line-height: 40px;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Antic Slab','Lato', sans-serif;
   font-weight: 600;
 }
 #subscribe .block p {
@@ -666,7 +669,7 @@ edit luis
 }
 #entrepreneurship .media .media-body p {
   font-size: 14px;
-  font-family: 'Lora', serif;
+  font-family: 'Antic Slab','Lora', serif;
   font-style: italic;
   color: #787878;
 }

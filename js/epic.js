@@ -43,9 +43,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('#scrollUp').hover(function() {
+    $('#scrollTooltip').css('opacity', '1');
+  },  function() {$('#scrollTooltip').css('opacity', '0');
+}
+);
+  });
 
 
-});
 
 //para scroll suave quando se clica no logo da epic
 //para aplicar a todos usar ('click','a[href^="#"]' ...
@@ -142,7 +147,7 @@ $(window).scroll(function() {
     var ht = $('#contact-form').height(); // height of div1 in pixels
     // if you've scrolled further than the top of div1 plus it's height
     // change the color. either by adding a class or setting a css property
-    console.log(os);
+    /*console.log(os);*/
     if (scroll >= os - 300) {
         /*$('#contact-form').addClass('inside');*/
     } else {
