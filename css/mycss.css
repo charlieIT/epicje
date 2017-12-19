@@ -407,7 +407,8 @@ sidebar @media queries
 @media screen and (max-width: 650px) {
   #teamPlaceholder {
     background: rgba(32, 35, 34, 0.7) !important;
-    padding:50px 0 !important;
+    padding:35px 0 !important;
+
   }
 }
 
@@ -461,7 +462,7 @@ nav.scrolled-nav ul.menu {
     padding: 100px 0;
     max-width: 100%;
     /*min-height: 100%;*/
-    width: 100%;
+    width: auto;
     height: auto;
     overflow:hidden;
 }
